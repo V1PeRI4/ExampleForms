@@ -36,9 +36,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.resultLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.nameResultLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.nameResultLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -50,7 +50,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(225, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -67,7 +66,6 @@
             this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите коэффициент \"x\"\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -77,7 +75,6 @@
             this.label2.Size = new System.Drawing.Size(139, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Введите коэффициент \"y\"";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -97,7 +94,6 @@
             this.resultLabel.Name = "resultLabel";
             this.resultLabel.Size = new System.Drawing.Size(0, 13);
             this.resultLabel.TabIndex = 7;
-            this.resultLabel.Click += new System.EventHandler(this.resultLabel_Click);
             // 
             // groupBox1
             // 
@@ -115,21 +111,6 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Решение квадратного уравнения";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ExampleForms.Properties.Resources.primer;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 50);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // nameResultLabel
             // 
@@ -139,7 +120,19 @@
             this.nameResultLabel.Size = new System.Drawing.Size(65, 13);
             this.nameResultLabel.TabIndex = 9;
             this.nameResultLabel.Text = "Результат: ";
-            this.nameResultLabel.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ExampleForms.Properties.Resources.primer;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(225, 50);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 

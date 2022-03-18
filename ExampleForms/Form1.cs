@@ -19,7 +19,6 @@ namespace ExampleForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (textBoxValidate(textBox1, textBox2)) {
 
                 float x = float.Parse(textBox1.Text);
@@ -29,11 +28,10 @@ namespace ExampleForms
 
                 resultLabel.Text = z.ToString();
             }
-            
         }
 
-        private bool textBoxValidate(params TextBox[] textBox) {
-
+        private bool textBoxValidate(params TextBox[] textBox)
+        {
             bool result = true;
 
             foreach (TextBox t in textBox)
@@ -47,47 +45,6 @@ namespace ExampleForms
             }
 
             return result;
-           
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void resultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 }

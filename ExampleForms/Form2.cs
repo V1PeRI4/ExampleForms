@@ -19,10 +19,8 @@ namespace ExampleForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (textBoxValidate(textBox1, textBox2))
             {
-
                 float a = float.Parse(textBox1.Text);
                 float b = float.Parse(textBox2.Text);
 
@@ -30,12 +28,10 @@ namespace ExampleForms
 
                 resultLabel.Text = z.ToString();
             }
-
         }
 
         private bool textBoxValidate(params TextBox[] textBox)
         {
-
             bool result = true;
 
             foreach (TextBox t in textBox)
@@ -49,12 +45,6 @@ namespace ExampleForms
             }
 
             return result;
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
