@@ -20,22 +20,16 @@ namespace ExampleForms
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (textBoxValidate(textBox1, textBox2, textBox3)) {
+            if (textBoxValidate(textBox1, textBox2)) {
 
-                int a = int.Parse(textBox1.Text);
-                int b = int.Parse(textBox2.Text);
-                int c = int.Parse(textBox3.Text);
+                float x = float.Parse(textBox1.Text);
+                float y = float.Parse(textBox2.Text);
 
-                double D = b * b - 4 * a * c;
+                double z = Math.Pow(x, 3) - (2.5 * x * y) + 1.78 * Math.Pow(x, 2) - (2.5 * y) + 1;  
 
-                if (D >= 0)
-                {
-                    double x1 = (-b + Math.Sqrt(D)) / (2 * a);
-                    double x2 = (-b - Math.Sqrt(D)) / (2 * a);
-                    resultLabel.Text = x1 + " " + x2;
-                }
-                else resultLabel.Text = "Корней нет";
+                resultLabel.Text = z.ToString();
             }
+            
         }
 
         private bool textBoxValidate(params TextBox[] textBox) {
@@ -56,6 +50,44 @@ namespace ExampleForms
            
         }
 
-     
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resultLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
